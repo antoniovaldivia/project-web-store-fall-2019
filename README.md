@@ -1,5 +1,7 @@
 # eVintage
 eVintage is an imaginary online store that sells retro electronics such as iPods, Walkmans, iBooks, or Sony Mavicas, upgraded with the most recent technology. Feel free to propose new products for our stock.
+<a href="https://github.com/antoniovaldivia/project-web-store-fall-2019/blob/master/eVintage.pdf" target="_blank">Planning, responsive wireframe and design guide</a>
+
 
 
 
