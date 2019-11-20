@@ -47,7 +47,9 @@ img, object, embed {
 
 /* Set all un-ordered lists to unbulletted */
 ul {
-  list-style-type: none;
+  list-style-type: initial;
+
+
 }
 ol {
   list-style-type: decimal;
@@ -127,9 +129,6 @@ hr {
 input, select, img, button, textarea {
   vertical-align: middle;
 }
-input *, button *, textarea * {
-  vertical-align: inherit;
-}
 
 /*
 pre {
@@ -165,15 +164,15 @@ pre, code, kbd, samp, var {
   cursor: text;
 }
 
-.clickable, [href], [for], [type="button"], [type="submit"], [type="checkbox"], [type="radio"], [type="file"], button {
+.clickable, a[href], label[for], input[type="button"], input[type="submit"], input[type="checkbox"], input[type="radio"], input[type="file"], button {
   cursor: pointer;
 }
 
-[type="radio"], [type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
   margin-top: -0.35em;
 }
 
-[type="search"] {
+input[type="search"] {
   -webkit-appearance: textfield;
 }
 
@@ -183,12 +182,12 @@ select, input, textarea, button {
   margin: 0;
 }
 
-[disabled] {
+button[disabled], input[disabled] {
   cursor: default;
 }
 
 /* make buttons play nice in IE */
-button, [type="button"], [type="submit"] { 
+button, input[type="button"], input[type="submit"] { 
   width: auto;
   overflow: visible;
   cursor: pointer;
@@ -198,4 +197,8 @@ button, [type="button"], [type="submit"] {
   content: " ";
   display: block;
   clear: both;
+}
+
+li { 
+display:inline;
 }

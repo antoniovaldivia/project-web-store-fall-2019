@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap');
+
+body { 
+    background-color: #f6f6f6;
+    color: #090909;
+    font: 400 normal 1.1em 'Lato', helvetica, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+
+h1 {
+    font-size: 2em;
+  }
+  
+h2 {
+    font-size: 1.5em;
+  }
+  
+h3 {
+    font-size: 1.2em;
+  }
+  
+h4 {
+    font-size: 1em;
+  }
+.header {
+    background-color: #ffffff;
+}
+.evintagelogo {
+    width: 6em;
+    padding-top: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menubar a {
+    color: #090909;
+    text-decoration: none;
+}
+.searchbox {
+
+}
+.masthead {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #f2e1b4;
+    padding: 1em;
+}
+.masthead img {
+    max-width: 50em;
+    padding: 1em;
+}
+
+.masthead h1 {
+    color: #2f5a75;
+}
+
+.shoplinkred {
+    border-radius: 0.5em;
+    background-color: #ff0000;
+    color: white;
+    margin: 1em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 12em;
+    text-transform: uppercase;
+ }
+
+ .promoted1 {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #b3fab3;
+    padding: 1em;
+}
+
+.promoted1 img {
+    width: 18em;
+}
+
+.shoplinkblack {
+    color: #090909;
+    padding: 3em 1em;
+    text-align: center;
+    text-decoration:underline;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+
+.promoted2 {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #43b1a3;
+    padding: 1em;
+}
+
+.promoted2 img {
+    width: 20em;
+}
+
+.promoted3 {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #b6ddf6;
+    padding: 1em;
+}
+
+.promoted3 img {
+    width: 25em;
+}
+
+.featured {
+    margin: 1em;
+    background-color: #ffffff;
+    text-align: center;
+}

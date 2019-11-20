@@ -8,18 +8,18 @@
     <meta name="description"
       content="Rediscover your favourite electronics from the past. We upgrade retro consumer electronics with the most advanced technology.">
     <meta name="author" content="Antonio Valdivia">
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="css/style.css">
     <title>eVintage store - Retro electronics reengineered</title>
   </head>
 
   <body>
-    <header>
+    <header class="header"> 
       <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="eVintage logo"></a>
+      <a href="index.html"><img  src="img/logo.svg" alt="eVintage logo" class="evintagelogo"></a>
       <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
+      <nav aria-label="Primary" class="menubar">
         <button type="button">
           <span class="material-icons">menu</span>
         </button>
@@ -53,10 +53,9 @@
         </ul>
       </nav>
       <!-- Search for a product (non-functional) -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
+      
+      <form class="searchbox">
+        <label>Search<input type="search" name="find" id="find"></label>
         <button type="button"><span class="material-icons">search</span></button>
       </form>
       <!-- Additional nav links -->
@@ -69,48 +68,48 @@
         <section class="masthead">
           <img src="img/masthead.svg" alt="Product Image">
           <h1>Reimagine the past</h1>
-          <p>Rediscover your favourite electronics from other times. We provide retro consumer electronics with the most
-            advanced technology, backed by a 100% quality guarantee.</p>
+          <p>Rediscover your favourite electronics from other times.</p> 
+          <p>We provide retro consumer electronics with the most advanced technology, backed by a 100% quality guarantee.</p>
           <ul>
-            <li><a href="#">Get started</a></li>
+            <li><a href="#" class="shoplinkred">Get started</a></li>
           </ul>
         </section>
         <!-- Promoted Product 1 -->
-        <section class="promoted"></section>
-        <article>
+        <section>
+        <article  class="promoted1">
           <header>
             <img src="img/kodak-super-8.png" alt="Product Image">
           </header>
           <h3>Kodak Super8</h3>
           <p>Super 8 and in SD 18, 24, 25, 36 FPS 6mm f/1.2 Richo lens.</p>
           <ul>
-            <li><a href="#">Shop now</a></li>
+            <li><a href="#" class="shoplinkblack">Shop now</a></li>
           </ul>
         </article>
         <!-- Promoted Product 2 -->
-        <article>
+        <article class="promoted2">
           <header>
             <img src="img/imac-upgraded.png" alt="Product Image">
           </header>
           <h3>iMac upgraded</h3>
           <p>Intel Core i7 3.6GHz quad‑core 32 GB RAM 1TB SSD.</p>
           <ul>
-            <li><a href="#">Shop now</a></li>
+            <li><a href="#" class="shoplinkblack">Shop now</a></li>
           </ul>
         </article>
         <!-- Promoted Product 3 -->
-        <article>
+        <article class="promoted3">
           <header>
             <img src="img/walkman-upgraded.png" alt="Product Image">
           </header>
           <h3>Walkman upgraded</h3>
           <p>10 hours of playback Cassete and SD Bluetooth.</p>
           <ul>
-            <li><a href="#">Shop now</a></li>
+            <li><a href="#" class="shoplinkblack">Shop now</a></li>
           </ul>
         </article>
         </section>
-        <section class="Featured Products">
+        <section class="featured">
           <h2>Featured Products</h2>
           <!-- Feat Product 1 -->
           <article>
