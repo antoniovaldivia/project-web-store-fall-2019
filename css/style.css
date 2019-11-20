@@ -118,6 +118,10 @@ h4 {
     width: 20em;
 }
 
+.hidden {
+    display: none;
+}
+
 .green {
 background-color: #b3fab3;
 }
