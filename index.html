@@ -19,54 +19,34 @@
       <!-- Site logo, replace with your own -->
       <a href="index.html"><img  src="img/logo.svg" alt="eVintage logo" class="evintagelogo"></a>
       <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary" class="menubar">
-        <button type="button">
-          <span class="material-icons">menu</span>
+      <nav aria-label="Primary" class="menubar menugrid">
+          <img src="img/menu.svg" alt="Menu icon">
         </button>
-        <ul>
-          <li><a href="#">Audio</a>
-            <ul>
-              <li><a href="#">iPods</a></li>
-              <li><a href="#">Walkmans</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Video</a>
-            <ul>
-              <li><a href="#">Super 8 cams</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Photo</a>
-            <ul>
-              <li><a href="#">Sony Mavicas</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Desktop Computers</a></li>
-          <ul>
-            <li><a href="#">iMacs</a></li>
-          </ul>
-          </li>
-          <li><a href="#">Laptop Computers</a>
-            <ul>
-              <li><a href="#">iBooks</a></li>
-            </ul>
-          </li>
+        <ul class="menuselector">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Get started</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign in</a></li>
+        </ul>
+        <ul class="shoppingchart">
+            <li><a href="#"><img src="img/chart.svg" alt="Shopping Chart icon"></a></li>
         </ul>
       </nav>
       <!-- Search for a product (non-functional) -->
       
       <form class="searchbox">
         <label>Search<input type="search" name="find" id="find"></label>
-        <button type="button"><span class="material-icons">search</span></button>
       </form>
       <!-- Additional nav links -->
-      <ul>
-        <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
-      </ul>
+
     </header>
     <main>
       <header>
         <section class="masthead">
-          <img src="img/masthead.svg" alt="Product Image">
+          <img src="img/masthead.svg" alt="A Walkman, an iPod and a Polaroid camera illustrated">
           <h1>Reimagine the past</h1>
           <p>Rediscover your favourite electronics from other times.</p> 
           <p>We provide retro consumer electronics with the most advanced technology, backed by a 100% quality guarantee.</p>
@@ -76,7 +56,7 @@
         </section>
         <!-- Promoted Product 1 -->
         <section>
-        <article  class="promoted1">
+        <article  class="promoted green">
           <header>
             <img src="img/kodak-super-8.png" alt="Product Image">
           </header>
@@ -87,7 +67,7 @@
           </ul>
         </article>
         <!-- Promoted Product 2 -->
-        <article class="promoted2">
+        <article class="promoted cyan">
           <header>
             <img src="img/imac-upgraded.png" alt="Product Image">
           </header>
@@ -98,7 +78,7 @@
           </ul>
         </article>
         <!-- Promoted Product 3 -->
-        <article class="promoted3">
+        <article class="promoted blue">
           <header>
             <img src="img/walkman-upgraded.png" alt="Product Image">
           </header>
@@ -156,21 +136,21 @@
             <p>"eVintage is full of creativity and innovation."</p>
             <footer>Elon</footer>
           </blockquote>
-          <section />
-          <footer class="footer">
-            <h2>Contact</h2>
-            <nav>
-              <ul>
-                <li><a href="#">help@evintage.com</a></li>
-                <li><a href="#">647 819 6714</a></li>
-              </ul>
-            </nav>
+        </section>
+        <footer class="footer">
+          <h3 class="footerhead">Contact<h3>
+
             <ul>
-              <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-              <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+              <li><a href="#">help@evintage.com</a></li>
+              <li><a href="#">647 819 6714</a></li>
             </ul>
-            <p>&copy; eVintage, Inc. All Rights Reserved.</p>
-          </footer>
+
+          <ul>
+            <li><a href="#"><span class="material-icons">perm_identity</span> Facebook</a></li>
+            <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+          </ul>
+          <p>&copy; eVintage, Inc. All Rights Reserved.</p>
+        </footer>
 
   </body>
 

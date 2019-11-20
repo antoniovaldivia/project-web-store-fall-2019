@@ -30,18 +30,53 @@ h4 {
 }
 .evintagelogo {
     width: 6em;
-    padding-top: 0.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.shoppingchart { 
+    display: inline;
+    margin-left: auto;
+}
+
+
 .menubar a {
     color: #090909;
     text-decoration: none;
+    
 }
-.searchbox {
+.menuselector { 
+    display: none;
+}
+
+.menugrid {
+    margin-top: -3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding: 0.7em 0.7em;
 
 }
+
+.menugrid img{
+ width: 1.5em;
+}
+
+.searchbox { 
+    display: none;
+}
+
+
+.menubutton { 
+    display: inline;
+    margin-right: auto;
+    margin-right: auto;
+    width: 2em ;
+}
+
 .masthead {
     font-size: 1.2em;
     text-align: center;
@@ -49,7 +84,7 @@ h4 {
     padding: 1em;
 }
 .masthead img {
-    max-width: 50em;
+    max-width: 100%;
     padding: 1em;
 }
 
@@ -68,22 +103,11 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 12em;
+    width: 10em;
     text-transform: uppercase;
  }
 
- .promoted1 {
-    font-size: 1.2em;
-    text-align: center;
-    background-color: #b3fab3;
-    padding: 1em;
-}
-
-.promoted1 img {
-    width: 18em;
-}
-
-.shoplinkblack {
+ .shoplinkblack {
     color: #090909;
     padding: 3em 1em;
     text-align: center;
@@ -92,32 +116,30 @@ h4 {
     text-transform: uppercase;
  }
 
-.promoted2 {
+ .promoted {
     font-size: 1.2em;
     text-align: center;
-    background-color: #43b1a3;
     padding: 1em;
 }
 
-.promoted2 img {
+.promoted img {
     width: 20em;
 }
 
-.promoted3 {
-    font-size: 1.2em;
-    text-align: center;
-    background-color: #b6ddf6;
-    padding: 1em;
+.green {
+background-color: #b3fab3;
 }
-
-.promoted3 img {
-    width: 25em;
+.cyan {
+background-color: #43b1a3;
+}
+.blue {
+background-color: #b6ddf6;
 }
 
 .featured {
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -126,8 +148,6 @@ h4 {
     background-color: #ffffff;
     border-radius: 0.5em;
     padding: 1em;
-
-
 }
 
 .featuredproduct img{
@@ -137,15 +157,37 @@ h4 {
 
 .testimonies {
     padding: 1em;
-    font-size: 1.2em;
     text-align: center;
 }
+
+.testimonies blockquote {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.testimonies blockquote footer {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
 
 .testimonies blockquote footer::before {
     content:"-";
   }
 
 .footer {
-    font-size: 1em;
-    padding: 1em;
+    font-size: 0.9em;
+    padding: 2em;
+    color: #7c7c7c;
+    text-align: center;
   } 
+
+
+.footer a{
+    text-decoration:none;
+    color: #7c7c7c;
+  }   
+
+.footerhead {
+    text-transform: uppercase;
+}  
