@@ -1,39 +1,57 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eVintage store - Retro electronics updated</title>
-    <meta name="description" content="Rediscover your favourite electronics from the past. We upgrade retro consumer electronics with the most advanced technology.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+      content="Rediscover your favourite electronics from the past. We upgrade retro consumer electronics with the most advanced technology.">
     <meta name="author" content="Antonio Valdivia">
     <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <title>eVintage store - Retro electronics reengineered</title>
   </head>
+
   <body>
     <header>
       <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
-
+      <a href="index.html"><img src="img/logo.svg" alt="eVintage logo"></a>
       <!-- Navigation menu and toggle button (non-functional) -->
       <nav aria-label="Primary">
         <button type="button">
           <span class="material-icons">menu</span>
         </button>
         <ul>
-          <li><a href="#">Category</a>
+          <li><a href="#">Audio</a>
             <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
+              <li><a href="#">iPods</a></li>
+              <li><a href="#">Walkmans</a></li>
             </ul>
           </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
+          <li><a href="#">Video</a>
+            <ul>
+              <li><a href="#">Super 8 cams</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Photo</a>
+            <ul>
+              <li><a href="#">Sony Mavicas</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Desktop Computers</a></li>
+          <ul>
+            <li><a href="#">iMacs</a></li>
+          </ul>
+          </li>
+          <li><a href="#">Laptop Computers</a>
+            <ul>
+              <li><a href="#">iBooks</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
-
       <!-- Search for a product (non-functional) -->
       <form>
         <label>Search
@@ -41,308 +59,120 @@
         </label>
         <button type="button"><span class="material-icons">search</span></button>
       </form>
-
       <!-- Additional nav links -->
-
       <ul>
-        <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
         <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
       </ul>
     </header>
-
     <main>
       <header>
-        <h1>Sale on [Category Name]</h1>
-
-        <!-- Filtering product form -->
-        <form>
-          <h2>Filters</h2>
-          <fieldset>
-            <label for="sort">Show</label>
-            <select name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Colour</legend>
+        <section class="masthead">
+          <img src="img/masthead.svg" alt="Product Image">
+          <h1>Reimagine the past</h1>
+          <p>Rediscover your favourite electronics from other times. We provide retro consumer electronics with the most
+            advanced technology, backed by a 100% quality guarantee.</p>
+          <ul>
+            <li><a href="#">Get started</a></li>
+          </ul>
+        </section>
+        <!-- Promoted Product 1 -->
+        <section class="promoted"></section>
+        <article>
+          <header>
+            <img src="img/kodak-super-8.png" alt="Product Image">
+          </header>
+          <h3>Kodak Super8</h3>
+          <p>Super 8 and in SD 18, 24, 25, 36 FPS 6mm f/1.2 Richo lens.</p>
+          <ul>
+            <li><a href="#">Shop now</a></li>
+          </ul>
+        </article>
+        <!-- Promoted Product 2 -->
+        <article>
+          <header>
+            <img src="img/imac-upgraded.png" alt="Product Image">
+          </header>
+          <h3>iMac upgraded</h3>
+          <p>Intel Core i7 3.6GHz quad‑core 32 GB RAM 1TB SSD.</p>
+          <ul>
+            <li><a href="#">Shop now</a></li>
+          </ul>
+        </article>
+        <!-- Promoted Product 3 -->
+        <article>
+          <header>
+            <img src="img/walkman-upgraded.png" alt="Product Image">
+          </header>
+          <h3>Walkman upgraded</h3>
+          <p>10 hours of playback Cassete and SD Bluetooth.</p>
+          <ul>
+            <li><a href="#">Shop now</a></li>
+          </ul>
+        </article>
+        </section>
+        <section class="Featured Products">
+          <h2>Featured Products</h2>
+          <!-- Feat Product 1 -->
+          <article>
+            <header>
+              <img src="img/ipod-upgraded.png" alt="Product Image">
+            </header>
+            <h3>iPod video 5.5 upgraded</h3>
             <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+              <li><a href="#">Shop now</a></li>
             </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-          <fieldset>
-            <legend>Ratings (above)</legend>
-            <ol>
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-            </ol>
-          </fieldset>
-        </form>
-      </header>
-
-      <section>
-        <h2>Results</h2>
-
-        <!-- Product 1 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
+          </article>
+          <!-- Feat Product 2 -->
+          <article>
+            <header>
+              <img src="img/ibook-upgraded.png" alt="Product Image">
+            </header>
+            <h3>iBook upgraded</h3>
+            <ul>
+              <li><a href="#">Shop now</a></li>
+            </ul>
+          </article>
+          <!-- Feat Product 3 -->
+          <article>
+            <header>
+              <img src="img/sony-mavica-upgraded.png" alt="Product Image">
+            </header>
+            <h3>Sony Mavica upgraded</h3>
+            <ul>
+              <li><a href="#">Shop now</a></li>
+            </ul>
+          </article>
+        </section>
+        <section class="testimonies">
+          <h2>Testimonies</h2>
+          <blockquote>
+            <p>Quality products at impressively low prices.</p>
+            <footer>Bill</footer>
+          </blockquote>
+          <blockquote>
+            <p>This new version is much better than the original one.</p>
+            <footer>Steve</footer>
+          </blockquote>
+          <blockquote>
+            <p>eVintage is full of creativity and innovation.</p>
+            <footer>Elon</footer>
+          </blockquote>
+          <section />
+          <footer class="footer">
+            <h2>Contact</h2>
+            <nav>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><a href="#">help@evintage.com</a></li>
+                <li><a href="#">647 819 6714</a></li>
               </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 2 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 3 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-  
-        <!-- Product 4 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 5 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-      </section>
-
-      <section role="navigation" aria-label="Pagination">
-        <p>1-5 of 23 products found</p>
-        <ol>
-          <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-          <li><a href="#" aria-label="Page 2">2</a></li>
-          <li><a href="#" aria-label="Page 3">3</a></li>
-          <li><a href="#" aria-label="Page 4">4</a></li>
-          <li><a href="#" aria-label="Page 5">5</a></li>
-        </ol>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; Copyright, 1991.</p>
-      <nav aria-label="Legal">
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
-      </ul>
-    </footer>
+            </nav>
+            <ul>
+              <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
+              <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+            </ul>
+            <p>&copy; eVintage, Inc. All Rights Reserved.</p>
+          </footer>
 
   </body>
+
 </html>
