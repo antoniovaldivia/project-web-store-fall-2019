@@ -47,9 +47,7 @@ img, object, embed {
 
 /* Set all un-ordered lists to unbulletted */
 ul {
-  list-style-type: initial;
-
-
+  list-style-type: none;
 }
 ol {
   list-style-type: decimal;
@@ -197,8 +195,4 @@ button, input[type="button"], input[type="submit"] {
   content: " ";
   display: block;
   clear: both;
-}
-
-li { 
-display:inline;
 }
