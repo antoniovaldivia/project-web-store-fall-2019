@@ -16,12 +16,16 @@ h2 {
 }
 h3 {
     font-size: 1.2em;
+    margin-bottom: 0.5em;
 }
 h4 {
     font-size: 1em;
 }
 
-
+legend {
+   text-align: center;
+   margin-top: 2em;
+}
 
 .list-inline li { 
     display: inline-block;
@@ -47,8 +51,14 @@ h4 {
     text-decoration: none;    
 }
 
+  
 .menubar a:hover {
     color: #ff0000;
+}
+
+.selected a {
+    color: #ff0000;
+    text-decoration: none;    
 }
 
 .menuselector { 
@@ -158,6 +168,8 @@ h4 {
     background-color: #b6ddf6;
 }
 
+
+
 .promotedlayout  {
     display: grid;
     grid-template-columns: 1fr ;
@@ -166,7 +178,9 @@ h4 {
 .featuredlayout  {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-gap: 0.5em; 
+    grid-gap: 1em; 
+    margin-top: 0.5em;
+    padding: 1.5em;
     }
 .featured {
     margin-top: 1.5em;
@@ -174,19 +188,41 @@ h4 {
     font-size: 1em;
     text-align: center;
 }
+
+    
 .featuredproduct {
-    margin: 1.5em;
+    margin: 0.1em;
     background-color: #ffffff;
     border-radius: 0.5em;
-    padding: 1em;
+    padding: 1.5em;
 }
-.featuredproduct img{
-    padding: 1em;
+.featuredproduct img {
     width: 15em;
 }
 
+.featuredproduct p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.imgproduct img {
+    width: 80%;
+    max-width: 30em;
+}
+
+.productlayout  {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 1em; 
+    padding: 1.5em;
+    }
+
+.textproduct {
+    text-align: left;
+} 
+
 .testimonies {
-text-align: center;
+    text-align: center;
 }
 .testimonies blockquote {
     font-size: 1.3em;
@@ -214,6 +250,10 @@ text-align: center;
 .footerhead {
     text-transform: uppercase;
 }  
+
+.footer li { 
+    display: inline;
+}
 
 @media screen and (min-width: 50em) {
 .mastheadlayout { 
@@ -273,7 +313,12 @@ text-align: center;
 .promotedlayout  {
     display: grid;
     grid-template-columns: 1fr 1fr ;
-}  
+}
+.productlayout  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
 .first {
 text-align: right;
 }
@@ -296,6 +341,7 @@ text-align: right;
     margin-right: auto;
 }                            
 }
+
 @media screen and (min-width: 90em) {
     .mastheadlayout {
     font-size: 1.3em;   
@@ -311,4 +357,46 @@ text-align: right;
     }
 }
 
-   
+   .swatches {
+  display: inline-block;
+}
+
+.swatches li {  /* Lineup the list in a single row */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-color {  /* Ensure labels take up the whole element space */
+  display: block;
+  position: relative;
+}
+
+.product-color span { /* Style the squares using the span element */
+  display: block;
+  border: 2px solid transparent;
+  color: transparent;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+}
+
+.product-color input {  /* Hide the radio buttons. TRY COMMENTING THESE PROPERTIES! */
+  position: absolute;
+  opacity: 0;
+  /* display: none; */
+}
+    /* Note: The <input> can also be hidden with display:none, but using opacity
+    may make it more accessible, as native devices will ignore a non-displaying
+    element. But opacity may allow native functionality, even if invisible. */
+
+.product-color input:checked + span {  /* When <input> within .product-color is :checked, put a border on the <span> that IMMEDIATELY follows it (+) */
+  border: 2px solid #ff0000; 
+}
+    /* Note: This becomes a less obvious managed dependancy. The <span> now
+    must always come immediately after the <input> in the HTML document. The
+    "+" is used to express "the sibling that immediately follows" */
+
+/* Add the colours */
+.product-color.black { background-color: black; }
+.product-color.blue { background-color: dodgerblue; }
+.product-color.white { background-color: white; }
